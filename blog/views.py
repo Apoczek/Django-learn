@@ -7,6 +7,7 @@ from django.db.models import Count
 from.models import Post, Comment
 from .forms import EmailPostForm, CommentForm
 
+
 class PostListView(ListView):
     queryset = Post.published.all()
     context_object_name = 'posts'
